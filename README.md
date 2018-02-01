@@ -1,53 +1,23 @@
-# IBM Cloud AppLaunch Swift Sample - Poll
-
-Sample Application to demonstrate capabilities of IBM Cloud AppLaunch Service 
-
-**Note** : This application is still under Development
-
-
-# IBM Cloud AppLaunch Swift Sample - Poll
-
+IBM Cloud AppLaunch Swift Sample - Poll
+=====================================================
 
 The [Bluemix App Launch service](https://console.bluemix.net/catalog/services/app-launch) App Launch service on Bluemix helps in controlled reach of app features. It provides a unified service to customize and personalize your applications to different audience with just few clicks.
 
 Ensure that you go through [Bluemix App Launch service documentation](https://console.bluemix.net/docs/services/app-launch/index.html) before you start.
 
 ## Contents
-- [Setup App Launch Service](#setup-app-launch-service)
-	 - [Creating the service](#creating-the-service)
-	 - [Creating a feature](#creating-a-feature)
-	 - [Creating an audience](#creating-an-audience)
-	 - [Creating an engagement](#creating-an-engagement)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Initialize SDK](#initialize-sdk)
-    - [Include client App Launch SDK](#include-client-app-launch-sdk)
-    - [Initialize](#initialize) 
-    - [Register](#register) 
-    - [Update User](#update-user)   
+- [Initialize](#initialize) 
+- [Register](#register) 
 - [Actions](#actions)
 - [Feature Toggle](#feature-toggle)
     - [Check if feature is enabled](#check-if-feature-is-enabled)
     - [Get variable for feature](#get-variable-for-feature)
 - [Metrics](#metrics)
     - [Send Metrics](#send-metrics)
-- [Applaunch Android SDK](#applaunch-android-sdk)    
+- [Applaunch Swift SDK](#applaunch-swift-sdk)    
 - [Samples and videos](#samples-and-videos)
 
-##Setup App Launch Service
-### Creating the service
-![Create feature](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-applaunch/blob/development/Images/create_service.gif)
-### Creating a feature
-![Create feature](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-applaunch/blob/development/Images/create_feature.gif)
-### Creating an audience
-![Create audience](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-applaunch/blob/development/Images/create_audience.gif)
-### Creating an engagement
-![Create engagement](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-android-applaunch/blob/development/Images/create_engagement.gif)
 
-
-
-
-     ```
 ### Initialize
 Initiaze App to connect with bluemix application by providing  details <Regions> , <ApplicationGUID> , <CLientSecret> in **LoginViewController.swift** file
 ```
