@@ -40,11 +40,11 @@ class ViewController: UIViewController {
     
     private func checkIfFeatureEnabled() {
         do {
-            if try AppLaunch.sharedInstance.isFeatureEnabled(featureCode: "_9uqcfzt0m") {
+            if try AppLaunch.sharedInstance.isFeatureEnabled(featureCode: "<featurecode>") {
                 pollButton.isHidden = false
-                popUpText = try AppLaunch.sharedInstance.getPropertyofFeature(featureCode: "_9uqcfzt0m", propertyCode: "_kpdm8tv1a")
-                popUpYes = try AppLaunch.sharedInstance.getPropertyofFeature(featureCode: "_9uqcfzt0m", propertyCode: "_1p7xwyg1p")
-                popUpNo = try AppLaunch.sharedInstance.getPropertyofFeature(featureCode: "_9uqcfzt0m", propertyCode: "_2dcs3dfl9")
+                popUpText = try AppLaunch.sharedInstance.getPropertyofFeature(featureCode: "<featurecode>", propertyCode: "<propertycode>")
+                popUpYes = try AppLaunch.sharedInstance.getPropertyofFeature(featureCode: "<featurecode>", propertyCode: "<propertycode>")
+                popUpNo = try AppLaunch.sharedInstance.getPropertyofFeature(featureCode: "<featurecode>", propertyCode: "<propertycode>")
             } else {
                 pollButton.isHidden = true
             }
@@ -58,14 +58,14 @@ class ViewController: UIViewController {
         let alert = UIAlertController(title: popUpText, message: "", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: popUpYes, style: .default, handler: { (action: UIAlertAction!) in
             do{
-                try AppLaunch.sharedInstance.sendMetrics(codes: ["_fngswyvoo"])
+                try AppLaunch.sharedInstance.sendMetrics(codes: ["<MetricCode>"])
             }catch{
                 print("AppLaunch SDK is not Initialized")
             }
         }))
         alert.addAction(UIAlertAction(title: popUpNo, style: .destructive, handler: { (action: UIAlertAction!) in
             do{
-                try AppLaunch.sharedInstance.sendMetrics(codes: ["_cjj3wmc0r"])
+                try AppLaunch.sharedInstance.sendMetrics(codes: ["<MetricCode>"])
             }catch{
                 print("AppLaunch SDK is not Initialized")
             }
