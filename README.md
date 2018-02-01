@@ -15,7 +15,7 @@ Ensure that you go through [Bluemix App Launch service documentation](https://co
 - [Metrics](#metrics)
     - [Send Metrics](#send-metrics)
 - [Applaunch Swift SDK](#applaunch-swift-sdk)    
-- [Samples and videos](#samples-and-videos)
+
 
 
 ### Initialize
