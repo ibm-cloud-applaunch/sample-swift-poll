@@ -23,7 +23,7 @@ import Foundation
 public enum ICRegion : String {
     
     /// US South IBM Cloud Region.
-    case US_SOUTH = ".stage1.ng.bluemix.net"
+    case US_SOUTH = ".ng.bluemix.net"
     
     /// United Kingdom IBM Cloud Region.
     case UNITED_KINGDOM = ".eu-gb.bluemix.net"
