@@ -3,6 +3,10 @@
 ### Description
 Sample swift application to demonstrate a classic usage of App Launch Service using a simple poll feature.
 
+<div style='float: center'>
+  <img style='width: 600px' src="images/iphone.png"></img>
+</div>
+
 ### Overview
 The following are the AppLaunch usecases which are covered with this sample
 
