@@ -28,7 +28,7 @@ The following are the AppLaunch usecases which are covered with this sample
 
 ## AppLaunch Concepts
 
-### Concept 1 - Remote App Customisation
+#### Concept 1 - Remote App Customisation
 
 A most common use case is where an app developer would want to change app background, a button text or certain widget placement in the app once after the app is published to the Appstore. Another Appstore publish might be an overkill, hence developers would prefer an over-the-air update. This gives developers a much-needed flexibility to manipulate app behavior.
 
@@ -58,7 +58,7 @@ Once the above is defined in the Console, in your code you will initialize the s
  ```
  The app can now be coded to utilize these Feature parameters to set the Poll question and the two button's label. That's it - the app will load the Feature parameters during app initialization. If the text is updated then the updated is text is fetched during the next app initialization or based on Application Refresh Policy which is set using AppLaunch SDK.
  
-### Concept 2 - Remote Feature Toggle
+#### Concept 2 - Remote Feature Toggle
 This is one of the most often asked feature and the easiest to accomplish using the App Launch Service. 
  
  - **Feature** - No change
@@ -68,7 +68,7 @@ This is one of the most often asked feature and the easiest to accomplish using 
 In your code surround the app logic to check if a feature is defined. For example, to display the 'Poll' button surround the display logic with a check for the feature, called 'Ask Poll'.
 
 
-### Concept 3 - Vary App Customisation by percentage of Users
+#### Concept 3 - Vary App Customisation by percentage of Users
 
 Often Developers would want to create multiple variants of Feature properties and apply them to a different percentage of users. For example, in the Poll example, fifty percentage of users should see one variation of the poll question and the remaining fifty should see variation of the same question. The idea is to perform an A/B test on users to arrive at the more suitable question.
 
@@ -85,7 +85,7 @@ Often Developers would want to create multiple variants of Feature properties an
 		 - popUpNo - “Not Really”
  - Code - No change in the code since the App Launch Service handles the audience segmentation.
 
-### Concept 4 - App Customisation by audiences
+#### Concept 4 - App Customisation by audiences
 This is perhaps the most advanced and the most powerful feature that App Launch Service supports. Take Poll feature, for example, if you would like to create two audiences, Registered users and Guest users and tailor app customisation for each audience then user experience can be customised for different devices.
 
  - **Feature** - No change
@@ -111,7 +111,7 @@ This is perhaps the most advanced and the most powerful feature that App Launch 
 			 - Audience="**Guest Users**"
 Note - you may create variants within each engagement, for example, within Guest Users Engagement you may apply **Concept 3**.
 
-### Metrics
+#### Metrics
 A hidden gem inside App Launch Service is collecting metrics. App Launch Service allows extensive support to embed metric collection hooks, across all the above four concepts. These metrics will help you evaluate results of A/B testing, Feature performance, etc.
 
 Next step, read App Launch documentation here and try out one of the samples here.
@@ -141,11 +141,10 @@ Next step, read App Launch documentation here and try out one of the samples her
 
 - Update various feature/property/metric codes  in `ViewController.swift`. These values can be viewed/downloaded from the JSON file after creating the feature in App Launch Console
 
-	```
-AppLaunch.sharedInstance.isFeatureEnabled(featureCode: "_p1ie0h4t3")
-popUpText = try AppLaunch.sharedInstance.getPropertyofFeature(featureCode: "_p1ie0h4t3", propertyCode: "_1kbhwoivq")
-AppLaunch.sharedInstance.sendMetrics(codes: ["_ycc4tikio"])
- ```
+	- `AppLaunch.sharedInstance.isFeatureEnabled(featureCode: "_p1ie0h4t3")`
+  - `popUpText = try AppLaunch.sharedInstance.getPropertyofFeature(featureCode: "_p1ie0h4t3", propertyCode: "_1kbhwoivq")`
+  - `AppLaunch.sharedInstance.sendMetrics(codes: ["_ycc4tikio"])`
+ 
 
 - Run the application in the iOS Simulator or physical device using Xcode. Login as a guest/registered user to use Poll feature.
 
