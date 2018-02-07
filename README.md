@@ -125,8 +125,8 @@ Next step, read App Launch documentation here and try out one of the samples her
 
 - From a command-line window, navigate to the project's root folder and run the command:
 
- - `pod update` 
- - `pod install`  
+	 - `pod update` 
+	 - `pod install`  
 
 	This step ensure loads the latest release of AppLaunch SDK into the Application.
 
