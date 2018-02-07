@@ -40,7 +40,7 @@ Let's say you would like a button that pop's up a Poll question with yes-no butt
 		 - property 1 - popUpText
 		 - property 2 - popUpYes
 		 - property 3 - popUpNo
- - **Audience** - An audience is a collection of attributes that define the characteristics of an audience segment. Let's say you'd like to group all 'Registered' customers, then you will define an Audience, called RegisteredCustomers with an attribute in it, called UserType with a value set to 'Registered'. Later during the app development you will initialize your app by setting an attribute with {'Type':'Registered'}. This initialization will cluster that app (the device) into a 'Registered Users' audience. 
+ - **Audience** - An audience is a collection of attributes that define the characteristics of an audience segment. Let's say you'd like to group all 'Registered' customers, then you will define an Audience, called RegisteredCustomers with an attribute in it, called UserType with a value set to 'Registered'. Later during the app development you will initialize your app by setting an attribute with {'UserType':'Registered'}. This initialization will cluster that app (the device) into a 'Registered Users' audience. 
 	 - Let's define an audience called, **All Users** 
 	 - Set its value to 'Registered,Guest'
  - **Engagement** - An engagement is an instantiation of a Feature with properties initialized and attaching one of the pre-defined audiences. For our AskPoll feature, we will,
@@ -54,7 +54,7 @@ Let's say you would like a button that pop's up a Poll question with yes-no butt
 
 Once the above is defined in the Console, in your code you will initialize the service and call the registration API passing in,
  ```
- {"Type":"Registered"} or {"Type":"Guest"}
+ {"UserType":"Registered"} or {"UserType":"Guest"}
  ```
  The app can now be coded to utilize these Feature parameters to set the Poll question and the two button's label. That's it - the app will load the Feature parameters during app initialization. If the text is updated then the updated is text is fetched during the next app initialization or based on Application Refresh Policy which is set using AppLaunch SDK.
  
