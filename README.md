@@ -4,7 +4,7 @@
 Sample swift application to demonstrate a classic usage of App Launch Service using a simple poll feature.
 
 <div style='float: center'>
-  <img style='width: 600px' src="images/iphone.png"></img>
+  <img style='width: 600px' src="https://raw.githubusercontent.com/ibm-cloud-applaunch/sample-swift-poll/master/images/iphone.png"></img>
 </div>
 
 ### Overview
